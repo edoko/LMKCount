@@ -34,7 +34,7 @@ public class MainActivity extends ActionBarActivity {
                 text.setText(msg);
             }
 
-            p = Runtime.getRuntime().exec("cat /sys/module/lowmemorykiller/parameters/lmkcount");
+            p = Runtime.getRuntime().exec("cat /sys/module/lowmemorykiller/parameters/oomcount");
             BufferedReader br2 = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
 
